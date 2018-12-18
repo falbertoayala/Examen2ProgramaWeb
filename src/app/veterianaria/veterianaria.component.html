@@ -1,0 +1,24 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Raza</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Id Dueño</th>
+      <th scope="col">Peso</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let animal of veterinaria">
+      <th scope="row">{{animal.name}}</th>
+      <td>{{animal.animal}}</td>
+      <td>{{animal.race}}</td>
+      <td>{{animal.eageInMonths}}</td>
+      <td>{{animal.ownerId}}</td>
+      <td>{{animal.weightInPounds}}</td>
+    </tr>
+    
+  </tbody>
+</table>
